@@ -1,0 +1,10 @@
+title: pulpy-mush
+description: A GitHub Pages blog.
+url: "https://rkarlssonlinner.github.io"
+baseurl: "/pulpy-mush"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
