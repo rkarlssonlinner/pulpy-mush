@@ -1,0 +1,51 @@
+{
+  "name": "pulpy-mush",
+  "displayName": "Pulpy Mush - Focus Mode",
+  "description": "Dims all non-active editor tabs to help you focus on the current file",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "pulpyMush.toggleFocusMode",
+        "title": "Toggle Focus Mode"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "pulpyMush.toggleFocusMode",
+        "key": "ctrl+shift+f12",
+        "mac": "cmd+shift+f12"
+      }
+    ],
+    "configuration": {
+      "title": "Pulpy Mush Focus Mode",
+      "properties": {
+        "pulpyMush.dimOpacity": {
+          "type": "number",
+          "default": 0.35,
+          "minimum": 0.05,
+          "maximum": 0.95,
+          "description": "Opacity level for dimmed editors (0.05 = nearly invisible, 0.95 = barely dimmed)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
