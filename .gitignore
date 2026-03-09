@@ -1,3 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
 pulpy-mush.code-workspace
 .DS_Store
 node_modules/
