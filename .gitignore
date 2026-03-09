@@ -4,3 +4,7 @@ _site/
 .jekyll-metadata
 vendor/
 Gemfile.lock
+pulpy-mush.code-workspace
+.DS_Store
+node_modules/
+out/
